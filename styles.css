@@ -1,0 +1,74 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Colors */
+body, html {
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+/* Navbar */
+.w3-bar {
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    transition: background-color 0.3s;
+}
+
+.w3-bar a {
+    color: #fff;
+}
+
+/* Hover effects */
+.project-box:hover {
+    background-color: #444;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+/* Project cards */
+.project-box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin: 20px 0;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Additional styling for sections */
+.project-title {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.project-date {
+    color: gray;
+    font-size: 0.9em;
+}
+
+.w3-container p {
+    text-align: justify;
+}
+
+footer {
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+footer a {
+    color: #f5f5f5;
+}
