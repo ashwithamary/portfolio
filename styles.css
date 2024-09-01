@@ -1,74 +1,74 @@
-/* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
-body, h1, h2, h3, h4, h5, h6 {
-    font-family: 'Roboto', sans-serif;
-}
-
 /* Colors */
-body, html {
-    color: #333;
-    background-color: #f5f5f5;
-}
-
-/* Navbar */
-.w3-bar {
-    background-color: #333;
-    color: #fff;
-    position: fixed;
-    width: 100%;
-    z-index: 1000;
-    top: 0;
-    transition: background-color 0.3s;
-}
-
-.w3-bar a {
-    color: #fff;
-}
-
-/* Hover effects */
-.project-box:hover {
-    background-color: #444;
-    color: #fff;
-    transition: background-color 0.3s;
-}
-
-/* Project cards */
-.project-box {
-    background-color: #fff;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    padding: 20px;
-    margin: 20px 0;
-}
-
-/* Smooth scrolling */
-html {
-    scroll-behavior: smooth;
-}
-
-/* Additional styling for sections */
-.project-title {
-    font-weight: bold;
-    margin: 10px 0;
-}
-
-.project-date {
-    color: gray;
-    font-size: 0.9em;
-}
-
-.w3-container p {
-    text-align: justify;
-}
-
-footer {
-    padding: 20px;
-    background-color: #333;
-    color: white;
-}
-
-footer a {
-    color: #f5f5f5;
-}
+:root {
+    --primary-color: #7239a8; /* Dark blue for main elements */
+    --secondary-color: rgb(145, 97, 207); /* Light blue for accents */
+    --background-color: #f5f5f5; /* Light gray for background */
+    --text-color: #333; /* Dark gray for text */
+    --card-background: #ffffff; /* White for cards */
+    --hover-color: #34495e; /* Slightly lighter blue for hover effects */
+  }
+  
+  body, html {
+      color: var(--text-color);
+      background-color: var(--background-color);
+  }
+  
+  /* Navbar */
+  .w3-bar {
+      background-color: var(--primary-color);
+      color: #fff;
+  }
+  
+  .w3-bar a:hover {
+      background-color: var(--secondary-color);
+      transition: background-color 0.3s;
+  }
+  
+  /* Project cards */
+  .project-box {
+      background-color: var(--card-background);
+      border: 1px solid #e0e0e0;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      transition: all 0.3s ease;
+  }
+  
+  .project-box:hover {
+      background-color: var(--hover-color);
+      color: #fff;
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  }
+  
+  /* Section headers */
+  h2 {
+      color: var(--primary-color);
+      /* border-bottom: 2px solid var(--secondary-color); */
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+  }
+  
+  /* Footer */
+  footer {
+      background-color: var(--primary-color);
+      color: white;
+  }
+  
+  footer a:hover {
+      color: var(--secondary-color);
+      text-decoration: none;
+  }
+  
+  /* Add a subtle gradient to the header */
+  header {
+      background: linear-gradient(to right, var(--primary-color), var(--hover-color));
+  }
+  
+  /* Add some subtle animations */
+  .project-box, .w3-bar a {
+      transition: all 0.3s ease;
+  }
+  
+  /* Improve readability */
+  .w3-container p {
+      line-height: 1.6;
+  }
